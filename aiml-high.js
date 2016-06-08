@@ -35,6 +35,18 @@ var aimlHigh = function(botAttributesParam, lastAnswer){
         });
     };
 
+    this.getStoredVariableValues = function() {
+        return storedVariableValues;
+    }
+
+    this.getBotAttributes = function() {
+        return botAttributes;
+    }
+
+	this.setStoredVariableValues = function(_storedVariableValues) {
+		this.storedVariableValues = _storedVariableValues ;
+	}
+	
     this.loadFromString = function(str) {
         if(str === undefined){
           return;
